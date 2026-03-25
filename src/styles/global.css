@@ -1,0 +1,81 @@
+:root {
+  --bg: #0d0f0a;
+  --bg2: #111408;
+  --bg3: #161a0d;
+  --card: #181c0f;
+  --card2: #1e2414;
+  --green: #b8f000;
+  --green2: #96cc00;
+  --green-dim: rgba(184,240,0,0.08);
+  --green-mid: rgba(184,240,0,0.15);
+  --green-glow: rgba(184,240,0,0.25);
+  --text: #f0f2e8;
+  --text2: #a8b090;
+  --text3: #6a7055;
+  --border: rgba(184,240,0,0.12);
+  --border2: rgba(255,255,255,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
+::selection { background: var(--green); color: #000; }
+
+@keyframes pulse-g {
+  0% { box-shadow: 0 0 0 0 rgba(184,240,0,0.4); }
+  70% { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+
+.sec-label {
+  
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sec-title {
+  
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.sec-title span { color: var(--green); }
+.divider { width: 50px; height: 3px; background: var(--green); border-radius: 2px; margin: 18px 0 0; }
+.sec-header { margin-bottom: 56px; }
+
+.pill {
+  padding: 7px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  
+  border: 1px solid var(--border);
+  color: var(--green);
+  background: var(--green-dim);
+}
+
+.skill-row { margin-bottom: 14px; }
+.skill-top { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.skill-name { font-size: 13px; color: var(--text); font-weight: 500; }
+.skill-pct { font-size: 11px;  color: var(--green); }
+.skill-bar { height: 4px; background: var(--bg3); border-radius: 4px; overflow: hidden; }
+.skill-fill { height: 100%; background: linear-gradient(90deg, var(--green), var(--green2)); border-radius: 4px; transition: width 1.5s ease; }
+
+.bg-alt { background: var(--bg2); }
+
+@media(max-width: 900px) {
+  .two-col { grid-template-columns: 1fr !important; }
+}

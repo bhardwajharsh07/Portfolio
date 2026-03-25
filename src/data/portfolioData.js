@@ -1,0 +1,271 @@
+const portfolioData = {
+  personal: {
+    name: "Harsh Bhardwaj",
+    title: "Data Science & Full-Stack Developer",
+    taglines: [
+      "Data Science Enthusiast",
+      "Java & Python Developer",
+      "Machine Learning Explorer",
+      "Problem Solver",
+    ],
+    email: "harshbhardwaj9491@gmail.com",
+    phone: "+91 9491091197",
+    location: "Lovely Professional University, Punjab",
+    bio: "I'm a B.Tech Computer Science student passionate about Data Science, Machine Learning, and full-stack development. I love building intelligent systems and turning raw data into actionable insights.",
+    social: {
+      github: "https://github.com/bhardwajharsh07",
+      linkedin: "https://linkedin.com/in/bhardwajharsh07/",
+      email: "mailto:harshbhardwaj9491@gmail.com",
+    },
+  },
+
+  about: {
+    description:
+      "I'm a B.Tech Computer Science student at Lovely Professional University with strong foundations in Data Science, Machine Learning, and Java development. I enjoy building intelligent systems — from anime recommendation engines to football player performance predictors. I believe in clean code, continuous learning, and data-driven problem solving.",
+    highlights: [
+      "3 Projects Built",
+      "5 Certificates",
+      "5★ Java & Python",
+      "450+ Problems Solved",
+    ],
+    interests: ["Data Science", "Machine Learning", "Open Source", "Competitive Programming", "Problem Solving"],
+  },
+
+  education: [
+    {
+      degree: "B.Tech (Hons.) — Computer Science & Engineering",
+      school: "Lovely Professional University, Punjab",
+      year: "Aug 2023 – Present",
+      gpa: "8.71 CGPA",
+      icon: "🎓",
+      desc: "Pursuing B.Tech in CSE with Honours. Strong focus on Data Science, Algorithms, and Machine Learning.",
+      link: "https://www.lpu.in/",
+    },
+    {
+      degree: "Intermediate (Class XII)",
+      school: "Holy Mission Sr. Sec. School, Bihar",
+      year: "Apr 2021 – Jun 2022",
+      gpa: "75%",
+      icon: "🏛️",
+      desc: "Science stream with Mathematics, Physics, and Chemistry.",
+      link: null,
+    },
+    {
+      degree: "Matriculation (Class X)",
+      school: "Holy Mission Sr. Sec. School, Bihar",
+      year: "Apr 2019 – Jun 2020",
+      gpa: "83%",
+      icon: "🏫",
+      desc: "Strong academic record with focus on Science and Mathematics.",
+      link: null,
+    },
+  ],
+
+  skills: [
+    {
+      category: "Languages",
+      items: [
+        { name: "Java", level: 88, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { name: "Python", level: 85, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "C++", level: 78, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+        { name: "SQL", level: 82, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      ],
+    },
+    {
+      category: "Data Science",
+      items: [
+        { name: "Scikit-learn", level: 82, logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
+        { name: "Pandas", level: 85, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+        { name: "NumPy", level: 83, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+        { name: "Matplotlib", level: 78, logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" },
+      ],
+    },
+    {
+      category: "Visualization",
+      items: [
+        { name: "Seaborn", level: 80, logo: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
+        { name: "Power BI", level: 72, logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+        { name: "Excel", level: 75, logo: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" },
+        { name: "Jupyter", level: 85, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
+      ],
+    },
+    {
+      category: "Tools",
+      items: [
+        { name: "Git & GitHub", level: 85, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+        { name: "VS Code", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { name: "MySQL", level: 80, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "Java Swing", level: 82, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      ],
+    },
+  ],
+
+  projects: [
+    {
+      id: 1,
+      title: "Anime Recommendation System",
+      desc: "Built a content-based anime recommendation system using KNN and cosine similarity based on genre, type, rating, episodes, and popularity. Generated Top-N recommendations for 12,200+ anime titles.",
+      tech: ["Python", "NumPy", "Pandas", "Scikit-learn", "K-NN"],
+      github: "https://github.com/bhardwajharsh07/Anime-Recommendation-System",
+      color: "#ff3333",
+      emoji: "🎌",
+      featured: true,
+      date: "Nov–Dec 2025",
+    },
+    {
+      id: 2,
+      title: "Inventory Management System",
+      desc: "Desktop-based inventory tool using Java Swing for product management. Features add, update, delete, search, sort, and undo using ArrayList, HashMap, Stack with OOP principles.",
+      tech: ["Java", "Swing", "DSA", "OOP"],
+      github: "https://github.com/bhardwajharsh07/Inventory-Management-System",
+      color: "#cc2222",
+      emoji: "📦",
+      featured: true,
+      date: "Jun–Jul 2025",
+    },
+    {
+      id: 3,
+      title: "Football Player Performance Analysis",
+      desc: "Data-driven regression model that evaluates and predicts football player performance using key statistical features. Achieved 90%+ prediction accuracy using Pandas, NumPy, Seaborn, and Scikit-learn.",
+      tech: ["Python", "NumPy", "Pandas", "Scikit-learn", "Seaborn"],
+      github: "https://github.com/bhardwajharsh07/Descriptive-Project",
+      color: "#10b981",
+      emoji: "⚽",
+      featured: false,
+      date: "Feb–Apr 2025",
+    },
+  ],
+
+  certifications: [
+    {
+      title: "SQL (Intermediate)",
+      issuer: "HackerRank",
+      date: "Nov 2025",
+      badge: "🗄️",
+      color: "#1ba94c",
+      link: "/sql_intermediate.pdf",
+      image: "/certs/sql.jpg",
+    },
+    {
+      title: "Introduction to Data Engineering",
+      issuer: "IBM · Coursera",
+      date: "Mar 2024",
+      badge: "🔧",
+      color: "#0056d3",
+      link: "/data_engineering.pdf",
+      image: "/certs/ibm.jpg",
+    },
+    {
+      title: "Python for Data Science",
+      issuer: "Infosys Springboard",
+      date: "Feb 2024",
+      badge: "🐍",
+      color: "#f59e0b",
+      link: "/python_datascience.pdf",
+      image: "/certs/python.jpg",
+    },
+    {
+      title: "Legacy Responsive Web Design V8",
+      issuer: "freeCodeCamp",
+      date: "Oct 2023",
+      badge: "🌐",
+      color: "#0a0a23",
+      link: "/responsive_webdesign.pdf",
+      image: "/certs/legacy.jpg",
+    },
+    {
+      title: "Startup Arena — Manigma (Participation)",
+      issuer: "Pragyan · NIT Trichy",
+      date: "Mar 2025",
+      badge: "🚀",
+      color: "#8b5cf6",
+      link: "/startup_arena.pdf",
+      image: "/certs/startup.jpg",
+    },
+  ],
+
+  achievements: [
+    {
+      title: "5-Star Rating in Java & Python — HackerRank",
+      org: "HackerRank",
+      year: "2025",
+      desc: "Achieved 5-star rating in both Java and Python on HackerRank, demonstrating strong programming fundamentals and problem-solving skills.",
+      icon: "⭐",
+      link: "https://www.hackerrank.com/harshbhardwaj999",
+    },
+    {
+      title: "4-Star Rating in SQL & C++ — HackerRank",
+      org: "HackerRank",
+      year: "2025",
+      desc: "Obtained 4-star rating in SQL and C++ on HackerRank, showcasing proficiency in database queries and systems programming.",
+      icon: "🏆",
+      link: "https://www.hackerrank.com/harshbhardwaj999",
+    },
+    {
+      title: "450+ Problems Solved — LeetCode, GFG & CodeChef",
+      org: "Multiple Platforms",
+      year: "2025",
+      desc: "Solved 450+ coding problems across LeetCode, GeeksForGeeks, and CodeChef covering DSA, algorithms, and competitive programming.",
+      icon: "💻",
+      link: "https://codolio.com/profile/harshbhardwaj",
+    },
+    {
+      title: "Startup Arena Participant — NIT Trichy Pragyan 2025",
+      org: "NIT Trichy · Pragyan",
+      year: "Mar 2025",
+      desc: "Participated in Startup Arena [Manigma] at Pragyan 2025, the International Techno-Managerial fest of NIT Tiruchirappalli.",
+      icon: "🎯",
+      link: null,
+    },
+  ],
+
+  experience: [
+    {
+      role: "Seeking Internship / Work Opportunity",
+      company: "Open to Opportunities",
+      period: "2025 – Present",
+      location: "Remote / India",
+      desc: "Actively seeking internship roles in Data Science, Machine Learning, Java Development, or Software Engineering. Ready to contribute and grow in a professional environment.",
+      tech: ["Python", "Java", "SQL", "Machine Learning", "Data Science"],
+      color: "#ff3333",
+    },
+  ],
+
+  competitive: [
+    {
+      name: "LeetCode",
+      handle: "@harshbhardwaj07",
+      url: "https://leetcode.com/u/harshbhardwaj07/",
+      color: "#ffa116",
+      bg: "rgba(255,161,22,0.1)",
+      border: "rgba(255,161,22,0.3)",
+      logo: "LC",
+      stats: [{ label: "Problems Solved", value: "220+" }],
+    },
+    {
+      name: "HackerRank",
+      handle: "@harshbhardwaj999",
+      url: "https://www.hackerrank.com/harshbhardwaj999",
+      color: "#1ba94c",
+      bg: "rgba(27,169,76,0.1)",
+      border: "rgba(27,169,76,0.3)",
+      logo: "HR",
+      stats: [
+        { label: "Java & Python", value: "5 Stars ⭐⭐⭐⭐⭐" },
+        { label: "SQL & C++", value: "4 Stars ⭐⭐⭐⭐" },
+      ],
+    },
+    {
+      name: "GeeksForGeeks",
+      handle: "@harshbhardwaj999",
+      url: "https://www.geeksforgeeks.org/user/harshbhardwaj9491/",
+      color: "#2f8d46",
+      bg: "rgba(47,141,70,0.1)",
+      border: "rgba(47,141,70,0.3)",
+      logo: "GFG",
+      stats: [{ label: "Platform", value: "Active Coder" }],
+    },
+  ],
+};
+
+export default portfolioData;
