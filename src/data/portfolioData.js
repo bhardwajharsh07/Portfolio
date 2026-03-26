@@ -1,7 +1,7 @@
 const portfolioData = {
   personal: {
     name: "Harsh Bhardwaj",
-    title: "Data Science & Full-Stack Developer",
+    title: "Data Science & Java Developer",
     taglines: [
       "Data Science Enthusiast",
       "Java & Python Developer",
@@ -11,7 +11,7 @@ const portfolioData = {
     email: "harshbhardwaj9491@gmail.com",
     phone: "+91 9491091197",
     location: "Lovely Professional University, Punjab",
-    bio: "I'm a B.Tech Computer Science student passionate about Data Science, Machine Learning, and full-stack development. I love building intelligent systems and turning raw data into actionable insights.",
+    bio: "I'm a B.Tech Computer Science student passionate about Data Science, Machine Learning, and Java development. I love building intelligent systems and turning raw data into actionable insights.",
     social: {
       github: "https://github.com/bhardwajharsh07",
       linkedin: "https://linkedin.com/in/bhardwajharsh07/",
