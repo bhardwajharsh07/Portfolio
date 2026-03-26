@@ -23,7 +23,7 @@ export default function Resume() {
           {/* ── Header ── */}
           <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)", paddingBottom: 26, marginBottom: 32 }}>
             <div style={{ fontSize: 32, fontWeight: 800, color: "#f0f2e8", letterSpacing: -1, marginBottom: 6 }}>Harsh Bhardwaj</div>
-            <div style={{ color: "#b8f000", fontWeight: 600, fontSize: 14, marginBottom: 14 }}>Data Science & Full-Stack Developer</div>
+            <div style={{ color: "#b8f000", fontWeight: 600, fontSize: 14, marginBottom: 14 }}>Data Science & Java Developer</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 20 }}>
               {[["✉", personal.email], ["📞", personal.phone], ["📍", "LPU, Punjab, India"], ["🔗", "github.com/bhardwajharsh07"], ["💼", "linkedin.com/in/bhardwajharsh07"]].map(([icon, val]) => (
                 <span key={val} style={{ fontSize: 12, color: "#6a7055", display: "flex", alignItems: "center", gap: 5 }}><span>{icon}</span>{val}</span>
